@@ -1,0 +1,55 @@
+{
+    "name": "vector-ui",
+    "version": "0.0.1",
+    "private": true,
+    "files": [
+        "dist"
+    ],
+    "type": "module",
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js"
+        },
+        "./theme": {
+            "types": "./dist/theme/index.d.ts",
+            "import": "./dist/theme/index.js"
+        },
+        "./theme/tokens.css": "./dist/theme/tokens.css",
+        "./theme/tokens.dark.css": "./dist/theme/tokens.dark.css"
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "rm -rf dist && tsc && vite build",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "lint": "oxlint .",
+        "format:check": "oxfmt --check .",
+        "format:write": "oxfmt --write ."
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "^7.0.1",
+        "@testing-library/react": "^16.3.3",
+        "@types/node": "^24.13.3",
+        "@types/react": "^19.2.18",
+        "@types/react-dom": "^19.2.4",
+        "@vitejs/plugin-react": "^6.1.1",
+        "jsdom": "^30.0.1",
+        "oxfmt": "^0.65.0",
+        "oxlint": "^1.79.0",
+        "react": "^19.2.8",
+        "react-dom": "^19.2.8",
+        "typescript": "~6.0.2",
+        "vite": "^8.2.2",
+        "vite-plugin-dts": "^5.0.3",
+        "vite-plugin-lib-inject-css": "^2.2.2",
+        "vitest": "^4.1.11"
+    },
+    "peerDependencies": {
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0"
+    }
+}
