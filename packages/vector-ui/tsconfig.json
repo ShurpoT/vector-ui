@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "target": "ES2023",
+        "lib": ["ES2023", "DOM"],
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "types": ["vite/client", "node", "@testing-library/jest-dom/vitest"],
+        "jsx": "react-jsx",
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "outDir": "dist",
+        "noEmit": false,
+        "strict": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "verbatimModuleSyntax": true,
+        "moduleDetection": "force",
+        "allowImportingTsExtensions": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true
+    },
+    "include": ["src", "vite.config.ts"],
+    "exclude": ["src/App.tsx", "src/main.tsx", "src/test/**", "dist", "node_modules"]
+}
