@@ -8,7 +8,7 @@ import globals from "globals";
 const sharedRules = {
   "no-ternary": "warn",
   "no-duplicate-imports": "warn",
-  "sort-keys": "warn",
+  "sort-keys": "off",
 
   "arrow-body-style": "off",
   "one-var": "off",
