@@ -19,7 +19,11 @@
         "allowImportingTsExtensions": false,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "noFallthroughCasesInSwitch": true
+        "noFallthroughCasesInSwitch": true,
+        "baseUrl": ".",
+        "paths": {
+            "@types/*": ["src/types/*"]
+        }
     },
     "include": ["src", "vite.config.ts"],
     "exclude": ["src/App.tsx", "src/main.tsx", "src/test/**", "dist", "node_modules"]

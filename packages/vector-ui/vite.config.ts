@@ -22,6 +22,12 @@ export default defineConfig({
             exclude: ["src/**/*.test.*", "src/App.tsx", "src/main.tsx", "src/test/**"],
         }),
     ],
+
+    resolve: {
+        alias: {
+            "@types": resolve(import.meta.dirname, "./src/types"),
+        },
+    },
     build: {
         copyPublicDir: false,
         lib: { entry: entries, formats: ["es"] },
