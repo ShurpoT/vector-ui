@@ -22,7 +22,8 @@
         "noFallthroughCasesInSwitch": true,
         "baseUrl": ".",
         "paths": {
-            "@types/*": ["src/types/*"]
+            "@vui-types": ["src/types/index.ts"],
+            "@vui-types/*": ["src/types/*"]
         }
     },
     "include": ["src", "vite.config.ts"],
