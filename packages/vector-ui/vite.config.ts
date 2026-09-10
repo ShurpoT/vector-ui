@@ -25,7 +25,7 @@ export default defineConfig({
 
     resolve: {
         alias: {
-            "@types": resolve(import.meta.dirname, "./src/types"),
+            "@vui-types": resolve(import.meta.dirname, "./src/types/index.ts"),
         },
     },
     build: {
