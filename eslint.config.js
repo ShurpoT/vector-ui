@@ -6,7 +6,10 @@ import eslintPluginAstro from "eslint-plugin-astro";
 import globals from "globals";
 
 const sharedRules = {
-  "no-ternary": "warn",
+  "no-ternary": "off",
+  "no-nested-ternary": "off",
+  "rest-spread-spacing": ["error", "never"],
+
   "no-duplicate-imports": "warn",
   "sort-keys": "off",
 
