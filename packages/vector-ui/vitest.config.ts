@@ -8,7 +8,11 @@ export default mergeConfig(
             environment: "jsdom",
             globals: true,
             setupFiles: "./src/test/setup.ts",
-            css: true,
+            css: {
+                modules: {
+                    classNameStrategy: "non-scoped", // Отключает хэширование классов в тестовом окружении
+                },
+            },
         },
     }),
 );
