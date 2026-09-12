@@ -10,7 +10,7 @@ export default mergeConfig(
             setupFiles: "./src/test/setup.ts",
             css: {
                 modules: {
-                    classNameStrategy: "non-scoped", // Отключает хэширование классов в тестовом окружении
+                    classNameStrategy: "non-scoped",
                 },
             },
         },
