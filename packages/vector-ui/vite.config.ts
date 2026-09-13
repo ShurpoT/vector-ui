@@ -18,6 +18,7 @@ export default defineConfig({
         react(),
         libInjectCss(),
         dts({
+            tsconfigPath: "./tsconfig.build.json",
             include: ["src"],
             exclude: ["src/**/*.test.*", "src/App.tsx", "src/main.tsx", "src/test/**"],
         }),
